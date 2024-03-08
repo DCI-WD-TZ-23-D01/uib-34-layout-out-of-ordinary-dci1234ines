@@ -1,4 +1,73 @@
+
 html, body {
     margin: 0;
     padding: 0;
+}
+
+
+.genres {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    align-items: center;
+    
+    padding: 20px;
+    flex-direction: row
+} 
+
+
+.genre-section {
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 200px; 
+    height: 100px; 
+   
+}
+
+
+
+.genre-section h3 {
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+}
+
+
+.genre-section.romance {
+    flex-grow: 3; 
+    background-color: rgb(255, 0, 0);
+    color: black;
+}
+
+
+.genre-section.comedy {
+    flex-grow: 6; 
+    background-color: rgb(255, 214, 30);
+}
+
+
+.genre-section:nth-child(1) {
+    background-color: rgb(30, 144, 255);
+}
+
+.genre-section:nth-child(2) {
+    background-color: rgb(190, 178, 178);
+}
+
+.genre-section:nth-child(4) {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.genre-section:nth-child(5) {
+    background-color: rgb(169, 169, 169);
+}
+
+
+@media (max-width: 600px) {
+    .genres {
+        flex-direction: column; 
+        align-items: flex-start; 
+}
 }
